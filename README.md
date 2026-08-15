@@ -107,7 +107,7 @@ By tracking feature frequency across the top 20% performing models across all sa
 
 * **Key Function:** `parse_logic_files()`
 * **Inputs:** Raw Saleae captures (`analog.csv`, `digital.csv`, `log.csv`)
-* **Outputs:** Extracted signal segment CSV files (`voltages/<sample_rate><s_or_n>/`)
+* **Outputs:** Extracted signal segment CSV files (`voltages/<sample_rate>/`)
 
 Reads raw CAN bus files (`analog.csv`, `digital.csv`, and `log.csv`), cuts out the voltage signals for each frame, checks that the signal start and end points are clean, and saves the clips to CSV files.
 
