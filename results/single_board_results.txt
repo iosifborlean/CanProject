@@ -1,0 +1,24 @@
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 50.0 MHz for aurix boards ===
+Validation Macro Precision: 95.89%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 50.0 MHz for st boards ===
+Validation Macro Precision: 87.73%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 50.0 MHz for atmel boards ===
+Validation Macro Precision: 96.67%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 50.0 MHz for all boards ===
+Validation Macro Precision: 93.30%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 50.0 MHz for aurix boards ===
+Validation Macro Precision: 95.85%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 50.0 MHz for st boards ===
+Validation Macro Precision: 88.07%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 50.0 MHz for atmel boards ===
+Validation Macro Precision: 96.21%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 50.0 MHz for all boards ===
+Validation Macro Precision: 93.57%
+------------------------------

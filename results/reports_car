@@ -1,0 +1,153 @@
+=== xgboost PERFORMANCE RESULTS for 1 seconds of recording at Sample Rate: 50.0 MHz for car ===
+              precision    recall  f1-score   support
+
+         0.0       0.00      0.00      0.00         5
+         1.0       1.00      1.00      1.00       137
+         2.0       0.97      1.00      0.98       976
+         3.0       1.00      0.98      0.99      1728
+         4.0       1.00      1.00      1.00       264
+         5.0       1.00      1.00      1.00        13
+         6.0       1.00      1.00      1.00         7
+         7.0       1.00      1.00      1.00       214
+         8.0       1.00      0.99      0.99       230
+
+    accuracy                           0.99      3574
+   macro avg       0.88      0.89      0.89      3574
+weighted avg       0.99      0.99      0.99      3574
+------------------------------
+=== xgboost PERFORMANCE RESULTS for 2 seconds of recording at Sample Rate: 50.0 MHz for car ===
+              precision    recall  f1-score   support
+
+         0.0       0.00      0.00      0.00         9
+         1.0       1.00      1.00      1.00       137
+         2.0       0.97      1.00      0.98      1116
+         3.0       1.00      0.98      0.99      1827
+         4.0       1.00      1.00      1.00       278
+         5.0       1.00      0.81      0.89        26
+         6.0       1.00      1.00      1.00        13
+         7.0       0.98      1.00      0.99       226
+         8.0       1.00      0.99      0.99       230
+
+    accuracy                           0.99      3862
+   macro avg       0.88      0.86      0.87      3862
+weighted avg       0.99      0.99      0.99      3862
+------------------------------
+=== xgboost PERFORMANCE RESULTS for 3 seconds of recording at Sample Rate: 50.0 MHz for car ===
+              precision    recall  f1-score   support
+
+         0.0       0.00      0.00      0.00         9
+         1.0       1.00      1.00      1.00       137
+         2.0       0.97      1.00      0.98      1222
+         3.0       1.00      0.99      0.99      1891
+         4.0       1.00      1.00      1.00       278
+         5.0       1.00      1.00      1.00        39
+         6.0       1.00      1.00      1.00        13
+         7.0       1.00      1.00      1.00       238
+         8.0       1.00      0.99      0.99       230
+
+    accuracy                           0.99      4057
+   macro avg       0.88      0.89      0.89      4057
+weighted avg       0.99      0.99      0.99      4057
+------------------------------
+=== xgboost PERFORMANCE RESULTS for 5 seconds of recording at Sample Rate: 50.0 MHz for car ===
+              precision    recall  f1-score   support
+
+         0.0       0.00      0.00      0.00         9
+         1.0       1.00      1.00      1.00       137
+         2.0       0.97      1.00      0.98      1248
+         3.0       1.00      0.98      0.99      1899
+         4.0       1.00      1.00      1.00       278
+         5.0       1.00      1.00      1.00        46
+         6.0       1.00      1.00      1.00        13
+         7.0       1.00      1.00      1.00       264
+         8.0       1.00      0.99      0.99       230
+
+    accuracy                           0.99      4124
+   macro avg       0.88      0.89      0.89      4124
+weighted avg       0.99      0.99      0.99      4124
+------------------------------
+=== xgboost PERFORMANCE RESULTS for 7 seconds of recording at Sample Rate: 50.0 MHz for car ===
+              precision    recall  f1-score   support
+
+         0.0       0.00      0.00      0.00         9
+         1.0       1.00      1.00      1.00       137
+         2.0       0.97      1.00      0.98      1270
+         3.0       1.00      0.99      0.99      1899
+         4.0       1.00      1.00      1.00       278
+         5.0       1.00      1.00      1.00        46
+         6.0       1.00      1.00      1.00        13
+         7.0       1.00      1.00      1.00       271
+         8.0       1.00      0.99      0.99       230
+
+    accuracy                           0.99      4153
+   macro avg       0.89      0.89      0.89      4153
+weighted avg       0.99      0.99      0.99      4153
+------------------------------
+=== xgboost PERFORMANCE RESULTS for 10 seconds of recording at Sample Rate: 50.0 MHz for car ===
+              precision    recall  f1-score   support
+
+         0.0       0.00      0.00      0.00         9
+         1.0       1.00      1.00      1.00       137
+         2.0       0.97      1.00      0.99      1289
+         3.0       1.00      0.98      0.99      1899
+         4.0       0.99      1.00      0.99       278
+         5.0       1.00      1.00      1.00        46
+         6.0       1.00      1.00      1.00        13
+         7.0       1.00      1.00      1.00       271
+         8.0       1.00      0.99      0.99       230
+
+    accuracy                           0.99      4172
+   macro avg       0.88      0.89      0.89      4172
+weighted avg       0.99      0.99      0.99      4172
+------------------------------
+=== xgboost PERFORMANCE RESULTS for 15 seconds of recording at Sample Rate: 50.0 MHz for car ===
+              precision    recall  f1-score   support
+
+         0.0       0.00      0.00      0.00         9
+         1.0       1.00      1.00      1.00       137
+         2.0       0.97      1.00      0.99      1321
+         3.0       1.00      0.99      0.99      1899
+         4.0       1.00      1.00      1.00       278
+         5.0       1.00      1.00      1.00        46
+         6.0       1.00      1.00      1.00        13
+         7.0       1.00      1.00      1.00       271
+         8.0       1.00      0.99      0.99       230
+
+    accuracy                           0.99      4204
+   macro avg       0.89      0.89      0.89      4204
+weighted avg       0.99      0.99      0.99      4204
+------------------------------
+=== xgboost PERFORMANCE RESULTS for 20 seconds of recording at Sample Rate: 50.0 MHz for car ===
+              precision    recall  f1-score   support
+
+         0.0       0.00      0.00      0.00         9
+         1.0       1.00      1.00      1.00       137
+         2.0       0.97      1.00      0.99      1353
+         3.0       1.00      0.99      0.99      1899
+         4.0       1.00      1.00      1.00       278
+         5.0       1.00      1.00      1.00        46
+         6.0       1.00      1.00      1.00        13
+         7.0       1.00      1.00      1.00       271
+         8.0       1.00      0.99      0.99       230
+
+    accuracy                           0.99      4236
+   macro avg       0.89      0.89      0.89      4236
+weighted avg       0.99      0.99      0.99      4236
+------------------------------
+=== xgboost PERFORMANCE RESULTS for 30 seconds of recording at Sample Rate: 50.0 MHz for car ===
+              precision    recall  f1-score   support
+
+         0.0       0.00      0.00      0.00         9
+         1.0       1.00      1.00      1.00       137
+         2.0       0.97      1.00      0.99      1417
+         3.0       1.00      0.99      0.99      1899
+         4.0       1.00      1.00      1.00       278
+         5.0       1.00      1.00      1.00        46
+         6.0       1.00      1.00      1.00        13
+         7.0       1.00      1.00      1.00       271
+         8.0       1.00      0.99      0.99       230
+
+    accuracy                           0.99      4300
+   macro avg       0.89      0.89      0.89      4300
+weighted avg       0.99      0.99      0.99      4300
+------------------------------

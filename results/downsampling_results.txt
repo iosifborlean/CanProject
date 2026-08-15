@@ -1,0 +1,48 @@
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 50.0 MHz for all boards ===
+Validation Macro Precision: 93.30%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 25.0 MHz for all boards ===
+Validation Macro Precision: 92.41%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 16.7 MHz for all boards ===
+Validation Macro Precision: 89.71%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 12.5 MHz for all boards ===
+Validation Macro Precision: 90.66%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 10.0 MHz for all boards ===
+Validation Macro Precision: 90.29%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 8.3 MHz for all boards ===
+Validation Macro Precision: 87.38%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 7.1 MHz for all boards ===
+Validation Macro Precision: 89.60%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 6.2 MHz for all boards ===
+Validation Macro Precision: 91.40%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 50.0 MHz for all boards ===
+Validation Macro Precision: 93.57%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 25.0 MHz for all boards ===
+Validation Macro Precision: 92.22%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 16.7 MHz for all boards ===
+Validation Macro Precision: 89.79%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 12.5 MHz for all boards ===
+Validation Macro Precision: 90.70%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 10.0 MHz for all boards ===
+Validation Macro Precision: 90.42%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 8.3 MHz for all boards ===
+Validation Macro Precision: 86.94%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 7.1 MHz for all boards ===
+Validation Macro Precision: 89.55%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 35 seconds of recording at Sample Rate: 6.2 MHz for all boards ===
+Validation Macro Precision: 91.40%
+------------------------------

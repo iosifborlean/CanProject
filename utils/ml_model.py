@@ -171,7 +171,11 @@ class MLmodel:
                 f.write(f"Validation Macro Precision: {macro_prec:.2f}%\n")
                 f.write(f"-" * 30 + f"\n")
 
+
+
         self.performance = macro_prec
+
+        return report
 
     def evaluate_cv_folds(self, x_train, y_train, a_or_w, n_splits=5):
         """Evaluates model performance across CV folds using macro precision and writes results directly to a file."""
@@ -263,7 +267,7 @@ class MLmodel:
         return summary_text
 
     def test_feature_subsets(self, x_train, y_train, results_filepath, max_combinations=150, min_features=5, max_features=25, n_splits=3,
-                             inclusion_threshold=50.0):
+                             inclusion_threshold=65.0):
 
         # 1. Establish the pool of features
         feature_pool = self.features.copy()

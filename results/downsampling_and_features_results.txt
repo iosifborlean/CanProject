@@ -1,0 +1,40 @@
+=== GLOBAL CROSS-SAMPLING-RATE FEATURE CONSENSUS ===
+Sampling Rates Tested: [50.0, 25.0, 16.67, 12.5, 6.25] MHz
+Total Top-Tier Model Instances Evaluated: 150.0
+-----------------------------------------------------------------
+Feature Name              | Global Inclusion Rate  | Total Appearances
+-----------------------------------------------------------------
+v_mean                    | 100.0%                 | 150/150.0
+time_minimum              |  94.0%                 | 141/150.0
+freq_crest                |  69.3%                 | 104/150.0
+arithmetic_mean           |  67.3%                 | 101/150.0
+decrease                  |  67.3%                 | 101/150.0
+entropy                   |  66.0%                 | 99/150.0
+peak                      |  65.3%                 | 98/150.0
+t_bit                     |  65.3%                 | 98/150.0
+freq_peak                 |  64.7%                 | 97/150.0
+geometric_mean            |  64.7%                 | 97/150.0
+rolloff_point             |  62.7%                 | 94/150.0
+mean_absolute             |  62.7%                 | 94/150.0
+rms                       |  62.7%                 | 94/150.0
+slope                     |  62.0%                 | 93/150.0
+std_dev                   |  61.3%                 | 92/150.0
+t_plat                    |  60.7%                 | 91/150.0
+centroid                  |  60.7%                 | 91/150.0
+form_factor               |  60.0%                 | 90/150.0
+time_mean                 |  60.0%                 | 90/150.0
+flux                      |  59.3%                 | 89/150.0
+v_max                     |  59.3%                 | 89/150.0
+time_kurtosis             |  58.7%                 | 88/150.0
+flatness                  |  58.7%                 | 88/150.0
+time_maximum              |  58.0%                 | 87/150.0
+variance                  |  57.3%                 | 86/150.0
+impulse_factor            |  57.3%                 | 86/150.0
+peak_factor               |  57.3%                 | 86/150.0
+freq_kurtosis             |  56.7%                 | 85/150.0
+freq_skewness             |  56.0%                 | 84/150.0
+spread                    |  54.0%                 | 81/150.0
+crest_factor              |  54.0%                 | 81/150.0
+freq_mean                 |  52.0%                 | 78/150.0
+skewness                  |  51.3%                 | 77/150.0
+-----------------------------------------------------------------

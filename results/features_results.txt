@@ -1,0 +1,511 @@
+=== STATISTICAL CONSENSUS & RANDOM SEARCH ANALYSIS: XGBOOST ===
+Sample Rate: 50.0 MHz
+Total Combinations Tested: 150
+Inclusion Threshold: 65.0% (based on top 30 models)
+--------------------------------------------------------------------------------
+ROBUST CONSENSUS FEATURE SET RESULT: 93.26% (±0.20%)
+Selected Features (16): v_mean, time_minimum, peak, freq_skewness, spread, v_max, variance, time_kurtosis, flatness, arithmetic_mean, t_plat, time_mean, skewness, impulse_factor, freq_mean, decrease
+--------------------------------------------------------------------------------
+STATISTICAL SUMMARY BY FEATURE COUNT:
+Num Features    | Average Score   | Max Score       | Min Score      
+-----------------------------------------------------------------
+5               | 82.78%         | 92.13%         | 44.16%
+8               | 89.08%         | 92.70%         | 60.08%
+12              | 91.53%         | 93.14%         | 89.44%
+16              | 91.77%         | 93.16%         | 90.20%
+20              | 92.18%         | 93.26%         | 90.69%
+25              | 92.84%         | 93.31%         | 91.17%
+--------------------------------------------------------------------------------
+
+FEATURE INCLUSION CONSENSUS:
+Feature Name              | Top-Tier Inclusion   | Avg Score With 
+-----------------------------------------------------------------
+v_mean                    | 100.0%              | 92.53%
+time_minimum              |  90.0%              | 91.77%
+peak                      |  80.0%              | 92.04%
+freq_skewness             |  76.7%              | 89.83%
+spread                    |  73.3%              | 91.78%
+v_max                     |  70.0%              | 92.06%
+variance                  |  70.0%              | 91.18%
+time_kurtosis             |  70.0%              | 90.39%
+flatness                  |  70.0%              | 91.19%
+arithmetic_mean           |  70.0%              | 91.85%
+t_plat                    |  66.7%              | 90.95%
+time_mean                 |  66.7%              | 91.64%
+skewness                  |  66.7%              | 91.90%
+impulse_factor            |  66.7%              | 91.28%
+freq_mean                 |  66.7%              | 91.95%
+decrease                  |  66.7%              | 90.45%
+mean_absolute             |  63.3%              | 91.34%
+std_dev                   |  63.3%              | 91.49%
+peak_factor               |  63.3%              | 90.49%
+entropy                   |  63.3%              | 92.02%
+geometric_mean            |  63.3%              | 90.34%
+freq_kurtosis             |  63.3%              | 91.77%
+slope                     |  63.3%              | 91.56%
+t_bit                     |  60.0%              | 88.91%
+time_maximum              |  60.0%              | 91.88%
+rms                       |  60.0%              | 91.42%
+centroid                  |  60.0%              | 89.68%
+flux                      |  60.0%              | 91.60%
+form_factor               |  56.7%              | 91.33%
+crest_factor              |  56.7%              | 91.20%
+freq_peak                 |  56.7%              | 91.56%
+rolloff_point             |  56.7%              | 90.64%
+freq_crest                |  53.3%              | 89.89%
+--------------------------------------------------------------------------------
+ALL TESTED RANDOM COMBINATIONS (Ranked):
+--------------------------------------------------------------------------------
+Rank 1: 93.31% (±0.17%), Number of Features: 25
+Features: arithmetic_mean, crest_factor, decrease, entropy, flatness, flux, form_factor, freq_crest, freq_kurtosis, freq_skewness, geometric_mean, impulse_factor, mean_absolute, peak, rolloff_point, skewness, slope, spread, t_bit, t_plat, time_kurtosis, time_maximum, time_mean, time_minimum, v_mean
+--------------------------------------------------------------------------------
+Rank 2: 93.30% (±0.19%), Number of Features: 25
+Features: arithmetic_mean, crest_factor, flatness, flux, freq_mean, freq_peak, freq_skewness, impulse_factor, mean_absolute, peak, peak_factor, rms, rolloff_point, skewness, slope, spread, std_dev, t_bit, t_plat, time_kurtosis, time_mean, time_minimum, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 3: 93.27% (±0.18%), Number of Features: 25
+Features: arithmetic_mean, centroid, decrease, flatness, flux, form_factor, freq_mean, freq_skewness, impulse_factor, mean_absolute, peak, peak_factor, skewness, slope, spread, std_dev, t_bit, t_plat, time_kurtosis, time_maximum, time_mean, time_minimum, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 4: 93.27% (±0.14%), Number of Features: 25
+Features: arithmetic_mean, centroid, crest_factor, flatness, flux, freq_kurtosis, freq_mean, freq_peak, freq_skewness, geometric_mean, impulse_factor, mean_absolute, peak, rolloff_point, slope, std_dev, t_bit, t_plat, time_kurtosis, time_maximum, time_mean, time_minimum, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 5: 93.26% (±0.18%), Number of Features: 25
+Features: arithmetic_mean, crest_factor, decrease, flatness, flux, form_factor, freq_crest, freq_kurtosis, freq_skewness, geometric_mean, impulse_factor, peak, peak_factor, rms, skewness, slope, spread, std_dev, t_bit, t_plat, time_kurtosis, time_mean, time_minimum, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 6: 93.26% (±0.30%), Number of Features: 20
+Features: arithmetic_mean, centroid, entropy, flatness, freq_mean, freq_peak, geometric_mean, impulse_factor, peak, peak_factor, rolloff_point, skewness, spread, t_bit, time_maximum, time_mean, time_minimum, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 7: 93.26% (±0.22%), Number of Features: 25
+Features: arithmetic_mean, centroid, crest_factor, decrease, entropy, flatness, form_factor, freq_kurtosis, freq_skewness, geometric_mean, impulse_factor, peak, rms, rolloff_point, skewness, slope, spread, std_dev, t_bit, time_kurtosis, time_maximum, time_mean, time_minimum, v_max, v_mean
+--------------------------------------------------------------------------------
+Rank 8: 93.25% (±0.20%), Number of Features: 25
+Features: crest_factor, decrease, entropy, flatness, freq_kurtosis, freq_mean, freq_skewness, geometric_mean, impulse_factor, peak, peak_factor, rms, rolloff_point, skewness, slope, spread, t_bit, t_plat, time_kurtosis, time_maximum, time_mean, time_minimum, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 9: 93.25% (±0.14%), Number of Features: 20
+Features: arithmetic_mean, decrease, flatness, flux, freq_kurtosis, freq_mean, freq_skewness, peak, rms, skewness, slope, spread, std_dev, t_bit, t_plat, time_maximum, time_minimum, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 10: 93.23% (±0.09%), Number of Features: 25
+Features: centroid, crest_factor, entropy, flatness, flux, form_factor, freq_crest, freq_mean, freq_peak, freq_skewness, geometric_mean, mean_absolute, peak, peak_factor, rms, skewness, t_bit, t_plat, time_kurtosis, time_maximum, time_mean, time_minimum, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 11: 93.21% (±0.12%), Number of Features: 25
+Features: arithmetic_mean, centroid, crest_factor, decrease, flatness, freq_crest, freq_kurtosis, freq_mean, freq_skewness, geometric_mean, impulse_factor, mean_absolute, peak, peak_factor, rolloff_point, skewness, slope, spread, std_dev, t_bit, t_plat, time_kurtosis, time_minimum, v_max, v_mean
+--------------------------------------------------------------------------------
+Rank 12: 93.21% (±0.17%), Number of Features: 20
+Features: entropy, flatness, flux, form_factor, freq_kurtosis, freq_peak, freq_skewness, impulse_factor, mean_absolute, peak, rms, rolloff_point, skewness, spread, t_bit, t_plat, time_kurtosis, time_minimum, v_max, v_mean
+--------------------------------------------------------------------------------
+Rank 13: 93.20% (±0.15%), Number of Features: 25
+Features: arithmetic_mean, centroid, crest_factor, decrease, form_factor, freq_crest, freq_kurtosis, freq_mean, freq_peak, geometric_mean, mean_absolute, peak_factor, rms, slope, spread, std_dev, t_bit, t_plat, time_kurtosis, time_maximum, time_mean, time_minimum, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 14: 93.20% (±0.14%), Number of Features: 25
+Features: centroid, crest_factor, decrease, entropy, flatness, flux, form_factor, freq_crest, freq_kurtosis, freq_mean, freq_skewness, impulse_factor, mean_absolute, peak_factor, rms, rolloff_point, skewness, slope, std_dev, time_kurtosis, time_maximum, time_mean, time_minimum, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 15: 93.18% (±0.23%), Number of Features: 25
+Features: arithmetic_mean, centroid, crest_factor, decrease, entropy, flatness, freq_crest, freq_mean, freq_skewness, geometric_mean, impulse_factor, mean_absolute, peak, peak_factor, rms, skewness, slope, spread, std_dev, t_bit, time_mean, time_minimum, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 16: 93.17% (±0.21%), Number of Features: 25
+Features: arithmetic_mean, centroid, decrease, flatness, form_factor, freq_kurtosis, freq_mean, freq_peak, freq_skewness, geometric_mean, mean_absolute, peak, peak_factor, rms, rolloff_point, skewness, spread, std_dev, t_bit, t_plat, time_mean, time_minimum, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 17: 93.16% (±0.09%), Number of Features: 16
+Features: centroid, decrease, entropy, flux, form_factor, freq_kurtosis, freq_peak, freq_skewness, peak, rms, t_plat, time_kurtosis, time_minimum, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 18: 93.14% (±0.21%), Number of Features: 12
+Features: centroid, flatness, freq_peak, impulse_factor, mean_absolute, slope, std_dev, t_plat, time_minimum, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 19: 93.14% (±0.16%), Number of Features: 16
+Features: decrease, entropy, flux, form_factor, freq_crest, freq_peak, freq_skewness, peak, peak_factor, skewness, slope, std_dev, time_kurtosis, time_minimum, v_max, v_mean
+--------------------------------------------------------------------------------
+Rank 20: 93.12% (±0.18%), Number of Features: 20
+Features: arithmetic_mean, centroid, crest_factor, freq_mean, freq_peak, freq_skewness, geometric_mean, impulse_factor, mean_absolute, peak, rms, skewness, spread, std_dev, time_kurtosis, time_maximum, time_mean, time_minimum, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 21: 93.11% (±0.15%), Number of Features: 25
+Features: arithmetic_mean, centroid, crest_factor, decrease, entropy, flatness, form_factor, freq_crest, freq_kurtosis, freq_mean, freq_skewness, geometric_mean, impulse_factor, rms, rolloff_point, slope, spread, std_dev, time_kurtosis, time_maximum, time_mean, time_minimum, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 22: 93.08% (±0.25%), Number of Features: 25
+Features: arithmetic_mean, centroid, crest_factor, entropy, freq_crest, freq_kurtosis, freq_mean, freq_peak, geometric_mean, mean_absolute, peak, peak_factor, rms, rolloff_point, skewness, slope, spread, std_dev, t_bit, t_plat, time_kurtosis, time_mean, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 23: 93.07% (±0.24%), Number of Features: 20
+Features: arithmetic_mean, centroid, entropy, form_factor, freq_crest, freq_mean, freq_skewness, geometric_mean, impulse_factor, peak, peak_factor, skewness, slope, spread, t_plat, time_kurtosis, time_minimum, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 24: 93.06% (±0.12%), Number of Features: 20
+Features: arithmetic_mean, decrease, entropy, flatness, flux, form_factor, freq_crest, freq_peak, freq_skewness, impulse_factor, peak, peak_factor, rolloff_point, spread, time_kurtosis, time_maximum, time_mean, time_minimum, v_max, v_mean
+--------------------------------------------------------------------------------
+Rank 25: 93.06% (±0.05%), Number of Features: 12
+Features: entropy, flux, form_factor, freq_kurtosis, freq_mean, freq_peak, mean_absolute, peak, rolloff_point, time_maximum, time_minimum, v_mean
+--------------------------------------------------------------------------------
+Rank 26: 93.04% (±0.14%), Number of Features: 25
+Features: arithmetic_mean, centroid, crest_factor, decrease, entropy, flatness, flux, freq_crest, freq_peak, freq_skewness, geometric_mean, impulse_factor, mean_absolute, peak, peak_factor, rms, spread, std_dev, t_plat, time_kurtosis, time_maximum, time_mean, time_minimum, v_max, v_mean
+--------------------------------------------------------------------------------
+Rank 27: 93.03% (±0.26%), Number of Features: 16
+Features: arithmetic_mean, decrease, entropy, flux, freq_crest, freq_kurtosis, geometric_mean, mean_absolute, rms, rolloff_point, skewness, slope, spread, std_dev, time_maximum, v_mean
+--------------------------------------------------------------------------------
+Rank 28: 93.01% (±0.23%), Number of Features: 25
+Features: arithmetic_mean, crest_factor, decrease, entropy, flatness, flux, freq_crest, freq_kurtosis, freq_mean, freq_skewness, geometric_mean, impulse_factor, mean_absolute, peak, peak_factor, rms, rolloff_point, skewness, spread, t_bit, t_plat, time_kurtosis, time_maximum, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 29: 92.99% (±0.25%), Number of Features: 25
+Features: arithmetic_mean, centroid, crest_factor, decrease, entropy, flatness, flux, form_factor, freq_crest, freq_kurtosis, freq_mean, freq_peak, freq_skewness, mean_absolute, peak_factor, rolloff_point, slope, spread, std_dev, t_plat, time_maximum, time_mean, time_minimum, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 30: 92.98% (±0.17%), Number of Features: 16
+Features: decrease, flux, form_factor, freq_kurtosis, freq_mean, freq_peak, geometric_mean, impulse_factor, peak, peak_factor, t_bit, t_plat, time_mean, time_minimum, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 31: 92.96% (±0.27%), Number of Features: 12
+Features: flatness, form_factor, freq_mean, freq_peak, geometric_mean, mean_absolute, skewness, spread, std_dev, time_kurtosis, time_maximum, v_mean
+--------------------------------------------------------------------------------
+Rank 32: 92.95% (±0.29%), Number of Features: 16
+Features: flux, freq_crest, freq_kurtosis, freq_skewness, geometric_mean, impulse_factor, mean_absolute, rms, rolloff_point, spread, t_bit, time_kurtosis, time_mean, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 33: 92.90% (±0.15%), Number of Features: 20
+Features: arithmetic_mean, entropy, flatness, freq_crest, freq_kurtosis, freq_peak, geometric_mean, impulse_factor, mean_absolute, rms, rolloff_point, std_dev, t_bit, t_plat, time_kurtosis, time_maximum, time_mean, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 34: 92.85% (±0.22%), Number of Features: 20
+Features: arithmetic_mean, crest_factor, decrease, entropy, flatness, form_factor, freq_crest, freq_kurtosis, freq_mean, freq_peak, impulse_factor, mean_absolute, rms, skewness, std_dev, t_bit, time_maximum, time_mean, v_max, v_mean
+--------------------------------------------------------------------------------
+Rank 35: 92.81% (±0.23%), Number of Features: 20
+Features: arithmetic_mean, centroid, entropy, flatness, flux, freq_crest, freq_mean, freq_peak, freq_skewness, impulse_factor, mean_absolute, peak, peak_factor, spread, t_plat, time_kurtosis, time_mean, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 36: 92.79% (±0.26%), Number of Features: 12
+Features: centroid, crest_factor, entropy, geometric_mean, impulse_factor, mean_absolute, rolloff_point, std_dev, time_kurtosis, time_maximum, v_max, v_mean
+--------------------------------------------------------------------------------
+Rank 37: 92.75% (±0.20%), Number of Features: 12
+Features: crest_factor, entropy, flatness, flux, form_factor, freq_crest, peak, rolloff_point, skewness, t_plat, time_minimum, v_mean
+--------------------------------------------------------------------------------
+Rank 38: 92.74% (±0.27%), Number of Features: 12
+Features: centroid, decrease, entropy, freq_crest, freq_mean, freq_peak, peak, skewness, spread, t_bit, time_mean, v_mean
+--------------------------------------------------------------------------------
+Rank 39: 92.71% (±0.23%), Number of Features: 16
+Features: arithmetic_mean, centroid, crest_factor, decrease, entropy, flux, freq_crest, freq_mean, freq_skewness, peak, skewness, t_plat, time_mean, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 40: 92.70% (±0.30%), Number of Features: 8
+Features: flatness, impulse_factor, peak, slope, std_dev, time_minimum, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 41: 92.68% (±0.16%), Number of Features: 20
+Features: arithmetic_mean, centroid, crest_factor, decrease, entropy, flatness, flux, form_factor, freq_kurtosis, impulse_factor, peak, rms, rolloff_point, slope, spread, std_dev, t_plat, time_mean, v_max, v_mean
+--------------------------------------------------------------------------------
+Rank 42: 92.67% (±0.26%), Number of Features: 16
+Features: centroid, entropy, flux, freq_kurtosis, geometric_mean, impulse_factor, peak, peak_factor, rolloff_point, spread, std_dev, t_bit, t_plat, time_mean, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 43: 92.64% (±0.22%), Number of Features: 16
+Features: crest_factor, decrease, flatness, form_factor, freq_mean, freq_peak, geometric_mean, peak, rms, rolloff_point, slope, std_dev, t_bit, time_mean, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 44: 92.64% (±0.14%), Number of Features: 25
+Features: arithmetic_mean, centroid, decrease, flatness, flux, form_factor, freq_crest, freq_kurtosis, freq_mean, freq_peak, freq_skewness, geometric_mean, impulse_factor, mean_absolute, peak_factor, rms, rolloff_point, slope, spread, t_bit, t_plat, time_mean, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 45: 92.61% (±0.19%), Number of Features: 16
+Features: arithmetic_mean, centroid, crest_factor, flatness, freq_crest, freq_mean, freq_peak, geometric_mean, impulse_factor, peak_factor, rolloff_point, skewness, t_bit, time_mean, v_max, v_mean
+--------------------------------------------------------------------------------
+Rank 46: 92.60% (±0.27%), Number of Features: 8
+Features: centroid, flatness, flux, peak, std_dev, time_kurtosis, v_max, v_mean
+--------------------------------------------------------------------------------
+Rank 47: 92.59% (±0.16%), Number of Features: 20
+Features: arithmetic_mean, crest_factor, decrease, flatness, flux, form_factor, freq_mean, freq_peak, impulse_factor, peak_factor, rms, rolloff_point, slope, spread, std_dev, t_plat, time_maximum, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 48: 92.42% (±0.16%), Number of Features: 8
+Features: centroid, flatness, form_factor, freq_peak, peak_factor, t_bit, v_max, v_mean
+--------------------------------------------------------------------------------
+Rank 49: 92.41% (±0.38%), Number of Features: 16
+Features: arithmetic_mean, centroid, crest_factor, flatness, flux, freq_kurtosis, freq_peak, peak, peak_factor, rms, rolloff_point, skewness, spread, time_mean, v_max, v_mean
+--------------------------------------------------------------------------------
+Rank 50: 92.27% (±0.09%), Number of Features: 12
+Features: arithmetic_mean, flatness, flux, form_factor, freq_crest, freq_mean, mean_absolute, peak, rms, v_max, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 51: 92.19% (±0.14%), Number of Features: 12
+Features: crest_factor, decrease, form_factor, freq_crest, freq_peak, geometric_mean, impulse_factor, peak_factor, slope, std_dev, time_kurtosis, v_mean
+--------------------------------------------------------------------------------
+Rank 52: 92.13% (±0.27%), Number of Features: 5
+Features: centroid, flux, std_dev, v_max, v_mean
+--------------------------------------------------------------------------------
+Rank 53: 92.11% (±0.04%), Number of Features: 8
+Features: decrease, entropy, flatness, form_factor, impulse_factor, time_maximum, time_mean, v_mean
+--------------------------------------------------------------------------------
+Rank 54: 91.83% (±0.33%), Number of Features: 25
+Features: arithmetic_mean, crest_factor, decrease, flatness, flux, form_factor, freq_peak, freq_skewness, geometric_mean, impulse_factor, mean_absolute, peak, rms, rolloff_point, skewness, slope, spread, std_dev, t_bit, t_plat, time_kurtosis, time_maximum, time_mean, time_minimum, variance
+--------------------------------------------------------------------------------
+Rank 55: 91.81% (±0.40%), Number of Features: 25
+Features: arithmetic_mean, centroid, decrease, flatness, flux, form_factor, freq_crest, freq_kurtosis, freq_peak, freq_skewness, mean_absolute, peak, peak_factor, rms, rolloff_point, slope, std_dev, t_bit, t_plat, time_kurtosis, time_maximum, time_mean, time_minimum, v_max, variance
+--------------------------------------------------------------------------------
+Rank 56: 91.77% (±0.27%), Number of Features: 16
+Features: crest_factor, flux, freq_kurtosis, freq_peak, geometric_mean, impulse_factor, peak, slope, t_bit, t_plat, time_kurtosis, time_maximum, time_mean, time_minimum, v_max, variance
+--------------------------------------------------------------------------------
+Rank 57: 91.68% (±0.40%), Number of Features: 16
+Features: decrease, entropy, flatness, freq_crest, freq_kurtosis, geometric_mean, mean_absolute, peak, skewness, slope, std_dev, time_kurtosis, time_mean, time_minimum, v_max, variance
+--------------------------------------------------------------------------------
+Rank 58: 91.67% (±0.41%), Number of Features: 25
+Features: centroid, crest_factor, decrease, entropy, flatness, flux, freq_crest, freq_mean, freq_peak, freq_skewness, geometric_mean, impulse_factor, mean_absolute, peak, rms, rolloff_point, skewness, spread, std_dev, t_bit, t_plat, time_maximum, time_minimum, v_max, variance
+--------------------------------------------------------------------------------
+Rank 59: 91.63% (±0.39%), Number of Features: 8
+Features: decrease, entropy, form_factor, mean_absolute, spread, time_kurtosis, time_maximum, time_minimum
+--------------------------------------------------------------------------------
+Rank 60: 91.63% (±0.35%), Number of Features: 20
+Features: arithmetic_mean, centroid, crest_factor, decrease, flatness, flux, freq_crest, freq_mean, freq_peak, freq_skewness, geometric_mean, peak_factor, rms, skewness, slope, std_dev, time_kurtosis, time_maximum, time_minimum, v_max
+--------------------------------------------------------------------------------
+Rank 61: 91.59% (±0.45%), Number of Features: 25
+Features: arithmetic_mean, centroid, flatness, flux, freq_crest, freq_kurtosis, freq_mean, freq_peak, geometric_mean, impulse_factor, peak_factor, rms, rolloff_point, skewness, slope, spread, std_dev, t_bit, t_plat, time_kurtosis, time_maximum, time_mean, time_minimum, v_max, variance
+--------------------------------------------------------------------------------
+Rank 62: 91.51% (±0.31%), Number of Features: 20
+Features: centroid, crest_factor, flatness, flux, form_factor, freq_crest, freq_peak, freq_skewness, impulse_factor, mean_absolute, peak, peak_factor, rms, std_dev, t_bit, time_maximum, time_mean, time_minimum, v_max, variance
+--------------------------------------------------------------------------------
+Rank 63: 91.50% (±0.40%), Number of Features: 20
+Features: arithmetic_mean, centroid, crest_factor, decrease, flatness, flux, form_factor, freq_mean, freq_peak, freq_skewness, impulse_factor, mean_absolute, peak, rms, rolloff_point, slope, spread, time_mean, time_minimum, variance
+--------------------------------------------------------------------------------
+Rank 64: 91.50% (±0.39%), Number of Features: 12
+Features: arithmetic_mean, crest_factor, freq_crest, freq_mean, mean_absolute, peak_factor, skewness, spread, std_dev, t_plat, time_minimum, v_max
+--------------------------------------------------------------------------------
+Rank 65: 91.49% (±0.39%), Number of Features: 16
+Features: arithmetic_mean, centroid, decrease, entropy, flatness, form_factor, freq_mean, freq_peak, freq_skewness, impulse_factor, peak, std_dev, t_bit, time_maximum, time_minimum, v_max
+--------------------------------------------------------------------------------
+Rank 66: 91.49% (±0.41%), Number of Features: 12
+Features: arithmetic_mean, flatness, freq_mean, geometric_mean, impulse_factor, rolloff_point, slope, t_plat, time_kurtosis, time_minimum, v_max, variance
+--------------------------------------------------------------------------------
+Rank 67: 91.48% (±0.29%), Number of Features: 16
+Features: arithmetic_mean, centroid, crest_factor, flux, freq_skewness, geometric_mean, impulse_factor, mean_absolute, spread, std_dev, t_plat, time_kurtosis, time_mean, time_minimum, v_max, variance
+--------------------------------------------------------------------------------
+Rank 68: 91.43% (±0.38%), Number of Features: 20
+Features: arithmetic_mean, centroid, crest_factor, decrease, entropy, flatness, form_factor, freq_kurtosis, geometric_mean, impulse_factor, rms, rolloff_point, spread, std_dev, time_kurtosis, time_maximum, time_mean, time_minimum, v_max, variance
+--------------------------------------------------------------------------------
+Rank 69: 91.41% (±0.35%), Number of Features: 12
+Features: arithmetic_mean, crest_factor, flatness, flux, form_factor, freq_crest, freq_kurtosis, peak, rms, spread, time_minimum, variance
+--------------------------------------------------------------------------------
+Rank 70: 91.38% (±0.07%), Number of Features: 8
+Features: crest_factor, entropy, form_factor, freq_kurtosis, slope, std_dev, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 71: 91.37% (±0.15%), Number of Features: 12
+Features: arithmetic_mean, centroid, decrease, entropy, freq_crest, freq_peak, freq_skewness, geometric_mean, mean_absolute, spread, time_minimum, v_mean
+--------------------------------------------------------------------------------
+Rank 72: 91.37% (±0.15%), Number of Features: 12
+Features: arithmetic_mean, centroid, crest_factor, form_factor, freq_crest, impulse_factor, peak_factor, rolloff_point, slope, spread, v_mean, variance
+--------------------------------------------------------------------------------
+Rank 73: 91.34% (±0.38%), Number of Features: 12
+Features: crest_factor, freq_crest, freq_kurtosis, freq_mean, freq_skewness, skewness, std_dev, t_plat, time_kurtosis, time_mean, time_minimum, v_max
+--------------------------------------------------------------------------------
+Rank 74: 91.30% (±0.25%), Number of Features: 16
+Features: crest_factor, decrease, entropy, flatness, flux, freq_skewness, impulse_factor, mean_absolute, peak_factor, rolloff_point, skewness, t_bit, time_maximum, time_mean, time_minimum, v_max
+--------------------------------------------------------------------------------
+Rank 75: 91.29% (±0.41%), Number of Features: 16
+Features: arithmetic_mean, crest_factor, decrease, form_factor, freq_kurtosis, freq_skewness, mean_absolute, rms, skewness, slope, spread, std_dev, t_bit, time_kurtosis, v_max, variance
+--------------------------------------------------------------------------------
+Rank 76: 91.28% (±0.24%), Number of Features: 12
+Features: freq_mean, geometric_mean, impulse_factor, peak, peak_factor, rolloff_point, std_dev, t_bit, time_maximum, time_mean, time_minimum, v_max
+--------------------------------------------------------------------------------
+Rank 77: 91.27% (±0.38%), Number of Features: 16
+Features: arithmetic_mean, centroid, decrease, flux, form_factor, freq_crest, freq_kurtosis, freq_skewness, mean_absolute, peak_factor, skewness, slope, t_bit, t_plat, time_kurtosis, v_max
+--------------------------------------------------------------------------------
+Rank 78: 91.25% (±0.39%), Number of Features: 12
+Features: centroid, freq_kurtosis, freq_peak, mean_absolute, rolloff_point, skewness, slope, spread, std_dev, t_bit, t_plat, time_maximum
+--------------------------------------------------------------------------------
+Rank 79: 91.24% (±0.36%), Number of Features: 8
+Features: crest_factor, entropy, flatness, freq_skewness, peak_factor, skewness, spread, v_mean
+--------------------------------------------------------------------------------
+Rank 80: 91.22% (±0.40%), Number of Features: 16
+Features: centroid, crest_factor, flatness, form_factor, freq_skewness, mean_absolute, peak, peak_factor, rolloff_point, skewness, slope, spread, time_kurtosis, time_mean, v_max, variance
+--------------------------------------------------------------------------------
+Rank 81: 91.18% (±0.36%), Number of Features: 12
+Features: arithmetic_mean, decrease, entropy, flux, freq_crest, freq_kurtosis, peak, rms, skewness, time_kurtosis, time_mean, time_minimum
+--------------------------------------------------------------------------------
+Rank 82: 91.18% (±0.22%), Number of Features: 5
+Features: freq_peak, skewness, t_bit, time_minimum, v_mean
+--------------------------------------------------------------------------------
+Rank 83: 91.18% (±0.52%), Number of Features: 16
+Features: entropy, freq_crest, freq_kurtosis, freq_mean, geometric_mean, impulse_factor, mean_absolute, peak_factor, rolloff_point, skewness, slope, std_dev, t_bit, t_plat, time_maximum, variance
+--------------------------------------------------------------------------------
+Rank 84: 91.17% (±0.44%), Number of Features: 8
+Features: entropy, form_factor, freq_skewness, impulse_factor, peak, peak_factor, std_dev, time_minimum
+--------------------------------------------------------------------------------
+Rank 85: 91.17% (±0.39%), Number of Features: 25
+Features: arithmetic_mean, crest_factor, decrease, flatness, form_factor, freq_crest, freq_kurtosis, freq_mean, freq_peak, geometric_mean, impulse_factor, mean_absolute, peak, peak_factor, rms, rolloff_point, skewness, spread, std_dev, t_bit, t_plat, time_kurtosis, time_maximum, time_mean, variance
+--------------------------------------------------------------------------------
+Rank 86: 91.17% (±0.34%), Number of Features: 20
+Features: arithmetic_mean, crest_factor, entropy, flux, form_factor, freq_crest, freq_peak, geometric_mean, impulse_factor, mean_absolute, rolloff_point, skewness, slope, spread, std_dev, time_kurtosis, time_maximum, time_mean, v_max, variance
+--------------------------------------------------------------------------------
+Rank 87: 91.17% (±0.25%), Number of Features: 16
+Features: arithmetic_mean, centroid, decrease, entropy, flux, form_factor, freq_crest, freq_skewness, impulse_factor, mean_absolute, peak_factor, spread, std_dev, t_bit, time_mean, time_minimum
+--------------------------------------------------------------------------------
+Rank 88: 91.16% (±0.36%), Number of Features: 16
+Features: crest_factor, entropy, flux, form_factor, freq_crest, freq_mean, freq_peak, rms, rolloff_point, skewness, slope, spread, std_dev, t_plat, time_kurtosis, v_max
+--------------------------------------------------------------------------------
+Rank 89: 91.12% (±0.41%), Number of Features: 16
+Features: crest_factor, entropy, flatness, flux, form_factor, freq_mean, freq_peak, freq_skewness, mean_absolute, peak, peak_factor, skewness, spread, std_dev, t_bit, variance
+--------------------------------------------------------------------------------
+Rank 90: 91.10% (±0.44%), Number of Features: 20
+Features: arithmetic_mean, crest_factor, entropy, flatness, flux, freq_crest, freq_kurtosis, freq_peak, mean_absolute, peak, rms, rolloff_point, skewness, slope, spread, std_dev, time_kurtosis, time_maximum, v_max, variance
+--------------------------------------------------------------------------------
+Rank 91: 91.06% (±0.33%), Number of Features: 12
+Features: flux, freq_kurtosis, freq_mean, freq_peak, freq_skewness, impulse_factor, peak, skewness, t_bit, time_kurtosis, time_maximum, variance
+--------------------------------------------------------------------------------
+Rank 92: 91.01% (±0.44%), Number of Features: 8
+Features: arithmetic_mean, centroid, geometric_mean, mean_absolute, peak_factor, skewness, std_dev, time_minimum
+--------------------------------------------------------------------------------
+Rank 93: 91.00% (±0.36%), Number of Features: 20
+Features: arithmetic_mean, crest_factor, decrease, entropy, flux, form_factor, freq_crest, freq_kurtosis, freq_mean, freq_skewness, impulse_factor, peak_factor, rms, skewness, std_dev, t_bit, t_plat, time_maximum, time_mean, variance
+--------------------------------------------------------------------------------
+Rank 94: 90.96% (±0.39%), Number of Features: 16
+Features: centroid, flatness, flux, form_factor, freq_crest, freq_kurtosis, geometric_mean, peak_factor, rms, std_dev, t_bit, t_plat, time_kurtosis, time_maximum, v_max, variance
+--------------------------------------------------------------------------------
+Rank 95: 90.91% (±0.32%), Number of Features: 12
+Features: arithmetic_mean, centroid, flatness, freq_peak, freq_skewness, geometric_mean, impulse_factor, t_bit, time_kurtosis, time_maximum, time_mean, variance
+--------------------------------------------------------------------------------
+Rank 96: 90.89% (±0.24%), Number of Features: 8
+Features: decrease, entropy, form_factor, freq_peak, freq_skewness, peak_factor, rms, time_minimum
+--------------------------------------------------------------------------------
+Rank 97: 90.83% (±0.38%), Number of Features: 16
+Features: arithmetic_mean, crest_factor, entropy, flux, form_factor, freq_crest, freq_kurtosis, freq_peak, freq_skewness, mean_absolute, peak, rolloff_point, slope, t_bit, t_plat, time_mean
+--------------------------------------------------------------------------------
+Rank 98: 90.81% (±0.26%), Number of Features: 8
+Features: flatness, flux, form_factor, freq_mean, impulse_factor, slope, time_kurtosis, v_max
+--------------------------------------------------------------------------------
+Rank 99: 90.73% (±0.28%), Number of Features: 16
+Features: centroid, crest_factor, entropy, flatness, form_factor, freq_crest, freq_kurtosis, freq_mean, freq_peak, freq_skewness, impulse_factor, peak, rolloff_point, std_dev, time_kurtosis, v_max
+--------------------------------------------------------------------------------
+Rank 100: 90.72% (±0.38%), Number of Features: 20
+Features: arithmetic_mean, centroid, crest_factor, decrease, entropy, flatness, freq_crest, freq_skewness, geometric_mean, mean_absolute, peak, peak_factor, rms, rolloff_point, skewness, slope, spread, t_plat, time_maximum, v_max
+--------------------------------------------------------------------------------
+Rank 101: 90.69% (±0.30%), Number of Features: 20
+Features: arithmetic_mean, centroid, entropy, flatness, flux, freq_crest, freq_kurtosis, freq_mean, freq_peak, freq_skewness, geometric_mean, mean_absolute, peak, rms, rolloff_point, slope, spread, time_maximum, v_max, variance
+--------------------------------------------------------------------------------
+Rank 102: 90.69% (±0.38%), Number of Features: 5
+Features: form_factor, freq_mean, geometric_mean, impulse_factor, v_mean
+--------------------------------------------------------------------------------
+Rank 103: 90.68% (±0.36%), Number of Features: 12
+Features: centroid, entropy, form_factor, freq_mean, freq_peak, geometric_mean, mean_absolute, peak, rms, slope, t_plat, time_mean
+--------------------------------------------------------------------------------
+Rank 104: 90.63% (±0.45%), Number of Features: 16
+Features: decrease, flatness, flux, freq_kurtosis, freq_mean, freq_peak, geometric_mean, mean_absolute, peak, peak_factor, rms, rolloff_point, skewness, spread, t_plat, time_mean
+--------------------------------------------------------------------------------
+Rank 105: 90.59% (±0.36%), Number of Features: 8
+Features: crest_factor, decrease, form_factor, freq_mean, freq_skewness, slope, t_bit, time_minimum
+--------------------------------------------------------------------------------
+Rank 106: 90.58% (±0.29%), Number of Features: 12
+Features: centroid, flux, freq_kurtosis, freq_skewness, mean_absolute, rms, rolloff_point, std_dev, t_bit, t_plat, time_kurtosis, time_minimum
+--------------------------------------------------------------------------------
+Rank 107: 90.52% (±0.31%), Number of Features: 12
+Features: arithmetic_mean, crest_factor, decrease, flux, form_factor, freq_mean, freq_skewness, mean_absolute, peak_factor, spread, v_max, variance
+--------------------------------------------------------------------------------
+Rank 108: 90.52% (±0.38%), Number of Features: 8
+Features: arithmetic_mean, centroid, entropy, form_factor, rms, spread, time_maximum, v_max
+--------------------------------------------------------------------------------
+Rank 109: 90.49% (±0.30%), Number of Features: 8
+Features: arithmetic_mean, decrease, freq_crest, freq_peak, peak, time_kurtosis, time_mean, variance
+--------------------------------------------------------------------------------
+Rank 110: 90.47% (±0.14%), Number of Features: 12
+Features: crest_factor, flux, freq_kurtosis, geometric_mean, impulse_factor, mean_absolute, peak_factor, rms, rolloff_point, slope, time_mean, time_minimum
+--------------------------------------------------------------------------------
+Rank 111: 90.39% (±0.35%), Number of Features: 12
+Features: centroid, flux, form_factor, freq_crest, freq_mean, peak, peak_factor, std_dev, t_plat, time_maximum, time_mean, v_max
+--------------------------------------------------------------------------------
+Rank 112: 90.34% (±0.14%), Number of Features: 5
+Features: crest_factor, form_factor, freq_peak, peak, spread
+--------------------------------------------------------------------------------
+Rank 113: 90.30% (±0.36%), Number of Features: 8
+Features: arithmetic_mean, freq_kurtosis, freq_skewness, geometric_mean, slope, spread, time_maximum, variance
+--------------------------------------------------------------------------------
+Rank 114: 90.22% (±0.24%), Number of Features: 5
+Features: freq_mean, peak, slope, spread, time_minimum
+--------------------------------------------------------------------------------
+Rank 115: 90.20% (±0.39%), Number of Features: 16
+Features: crest_factor, entropy, flatness, form_factor, freq_crest, freq_mean, freq_peak, geometric_mean, impulse_factor, rolloff_point, skewness, t_bit, t_plat, time_kurtosis, time_mean, variance
+--------------------------------------------------------------------------------
+Rank 116: 90.10% (±0.47%), Number of Features: 5
+Features: entropy, freq_crest, geometric_mean, peak, time_kurtosis
+--------------------------------------------------------------------------------
+Rank 117: 90.02% (±0.28%), Number of Features: 8
+Features: crest_factor, flux, freq_mean, peak_factor, rolloff_point, std_dev, time_maximum, time_mean
+--------------------------------------------------------------------------------
+Rank 118: 89.96% (±0.37%), Number of Features: 5
+Features: decrease, flatness, freq_kurtosis, freq_peak, peak
+--------------------------------------------------------------------------------
+Rank 119: 89.95% (±0.53%), Number of Features: 8
+Features: arithmetic_mean, crest_factor, flatness, freq_kurtosis, rolloff_point, t_bit, time_maximum, time_mean
+--------------------------------------------------------------------------------
+Rank 120: 89.81% (±0.30%), Number of Features: 8
+Features: decrease, freq_peak, peak_factor, rms, rolloff_point, std_dev, time_maximum, variance
+--------------------------------------------------------------------------------
+Rank 121: 89.71% (±0.33%), Number of Features: 5
+Features: freq_crest, mean_absolute, peak_factor, time_kurtosis, time_minimum
+--------------------------------------------------------------------------------
+Rank 122: 89.67% (±0.24%), Number of Features: 5
+Features: flux, peak_factor, t_bit, time_mean, time_minimum
+--------------------------------------------------------------------------------
+Rank 123: 89.50% (±0.27%), Number of Features: 5
+Features: entropy, geometric_mean, t_bit, time_minimum, v_mean
+--------------------------------------------------------------------------------
+Rank 124: 89.44% (±0.24%), Number of Features: 12
+Features: decrease, flatness, flux, form_factor, freq_kurtosis, freq_mean, impulse_factor, peak_factor, spread, t_bit, t_plat, variance
+--------------------------------------------------------------------------------
+Rank 125: 89.29% (±0.22%), Number of Features: 5
+Features: centroid, freq_peak, spread, t_bit, v_max
+--------------------------------------------------------------------------------
+Rank 126: 89.16% (±0.38%), Number of Features: 5
+Features: crest_factor, flatness, freq_mean, mean_absolute, time_kurtosis
+--------------------------------------------------------------------------------
+Rank 127: 88.99% (±0.29%), Number of Features: 5
+Features: flux, freq_crest, freq_skewness, peak_factor, rms
+--------------------------------------------------------------------------------
+Rank 128: 88.70% (±0.29%), Number of Features: 8
+Features: arithmetic_mean, centroid, decrease, form_factor, rms, skewness, spread, variance
+--------------------------------------------------------------------------------
+Rank 129: 88.62% (±0.29%), Number of Features: 5
+Features: centroid, geometric_mean, impulse_factor, slope, time_minimum
+--------------------------------------------------------------------------------
+Rank 130: 87.78% (±0.09%), Number of Features: 5
+Features: centroid, rolloff_point, skewness, time_mean, time_minimum
+--------------------------------------------------------------------------------
+Rank 131: 87.54% (±0.11%), Number of Features: 5
+Features: peak, peak_factor, rolloff_point, t_bit, time_kurtosis
+--------------------------------------------------------------------------------
+Rank 132: 87.21% (±0.24%), Number of Features: 5
+Features: t_bit, t_plat, time_maximum, time_mean, v_max
+--------------------------------------------------------------------------------
+Rank 133: 86.99% (±0.20%), Number of Features: 5
+Features: arithmetic_mean, std_dev, t_plat, time_mean, time_minimum
+--------------------------------------------------------------------------------
+Rank 134: 86.40% (±0.26%), Number of Features: 5
+Features: arithmetic_mean, form_factor, peak_factor, rolloff_point, variance
+--------------------------------------------------------------------------------
+Rank 135: 86.25% (±0.42%), Number of Features: 5
+Features: freq_kurtosis, freq_peak, rms, skewness, spread
+--------------------------------------------------------------------------------
+Rank 136: 86.17% (±0.44%), Number of Features: 5
+Features: crest_factor, freq_peak, rms, rolloff_point, time_mean
+--------------------------------------------------------------------------------
+Rank 137: 86.13% (±0.05%), Number of Features: 8
+Features: centroid, form_factor, freq_kurtosis, freq_peak, mean_absolute, rolloff_point, t_plat, time_kurtosis
+--------------------------------------------------------------------------------
+Rank 138: 85.29% (±0.16%), Number of Features: 8
+Features: centroid, flatness, freq_crest, freq_peak, geometric_mean, mean_absolute, rolloff_point, spread
+--------------------------------------------------------------------------------
+Rank 139: 84.58% (±0.30%), Number of Features: 5
+Features: flatness, flux, form_factor, mean_absolute, rms
+--------------------------------------------------------------------------------
+Rank 140: 84.09% (±0.30%), Number of Features: 5
+Features: form_factor, geometric_mean, slope, t_bit, time_kurtosis
+--------------------------------------------------------------------------------
+Rank 141: 84.02% (±0.12%), Number of Features: 5
+Features: freq_skewness, rolloff_point, slope, t_plat, time_minimum
+--------------------------------------------------------------------------------
+Rank 142: 83.92% (±0.14%), Number of Features: 5
+Features: centroid, form_factor, freq_skewness, mean_absolute, t_bit
+--------------------------------------------------------------------------------
+Rank 143: 83.58% (±0.20%), Number of Features: 5
+Features: centroid, decrease, slope, t_bit, time_mean
+--------------------------------------------------------------------------------
+Rank 144: 82.65% (±0.26%), Number of Features: 5
+Features: freq_crest, impulse_factor, rolloff_point, t_bit, v_mean
+--------------------------------------------------------------------------------
+Rank 145: 79.45% (±0.36%), Number of Features: 5
+Features: flux, mean_absolute, rms, t_plat, time_kurtosis
+--------------------------------------------------------------------------------
+Rank 146: 60.08% (±0.32%), Number of Features: 8
+Features: centroid, freq_crest, freq_skewness, peak_factor, std_dev, t_bit, t_plat, time_kurtosis
+--------------------------------------------------------------------------------
+Rank 147: 54.02% (±0.64%), Number of Features: 5
+Features: centroid, crest_factor, freq_crest, rolloff_point, t_bit
+--------------------------------------------------------------------------------
+Rank 148: 50.68% (±0.62%), Number of Features: 5
+Features: decrease, freq_crest, geometric_mean, impulse_factor, peak_factor
+--------------------------------------------------------------------------------
+Rank 149: 49.82% (±1.49%), Number of Features: 5
+Features: decrease, freq_skewness, geometric_mean, t_bit, time_kurtosis
+--------------------------------------------------------------------------------
+Rank 150: 44.16% (±0.31%), Number of Features: 5
+Features: centroid, flatness, freq_skewness, t_bit, variance
+--------------------------------------------------------------------------------
+
+================================================================================
+

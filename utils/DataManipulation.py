@@ -4,7 +4,7 @@ import re
 import pandas as pd
 
 
-def parse_logic_files(sample_rate, s_or_n, pre_padding_time, post_padding_time):
+def parse_logic_files(sample_rate, pre_padding_time, post_padding_time):
     SAMPLE_RATE = sample_rate * 1e6
 
     PRE_PADDING_TIME = pre_padding_time * 1e-6  # Increased to reach further back into the idle state
@@ -16,7 +16,7 @@ def parse_logic_files(sample_rate, s_or_n, pre_padding_time, post_padding_time):
     THRESHOLD = 2.2e-6
     MIN_DIFF = 1.6e-6
 
-    OUTPUT_DIR = f"voltages/{sample_rate}{s_or_n}"
+    OUTPUT_DIR = f"voltages/{sample_rate}"
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     ANALOG_FILE = 'D:/analog.csv'
@@ -224,4 +224,4 @@ def parse_logic_files(sample_rate, s_or_n, pre_padding_time, post_padding_time):
     print(f"Eventi scartati (a cavallo di due chunk): {skipped_boundary}")
 
 
-parse_logic_files(50, "n", 0.7, 0.6)
+parse_logic_files(50, 0.7, 0.6)

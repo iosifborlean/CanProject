@@ -1,0 +1,31 @@
+=== 5-FOLD CV BREAKDOWN: XGBOOST ===
+Sample Rate: 50.0 MHz
+
+  Fold 1: 93.41%
+  Fold 2: 93.55%
+  Fold 3: 93.20%
+  Fold 4: 92.90%
+  Fold 5: 93.37%
+----------------------------------------
+  Mean Precision (Macro): 93.29%
+  Std Deviation         : ±0.22%
+------------------------------
+=== DATA QUANTITY ANALYSIS: XGBOOST ===
+Sample Rate: 50.0 MHz
+Iterations per split: 5
+-----------------------------------------------------------------
+Format: Train % / Val % -> Mean Precision (Macro) ± Std Dev
+-----------------------------------------------------------------
+Train  5% / Val 95% : 88.99% ± 0.38% 
+Train  6% / Val 94% : 89.31% ± 0.24% 
+Train  7% / Val 93% : 89.66% ± 0.18% 
+Train  8% / Val 92% : 90.21% ± 0.19% 
+Train  9% / Val 91% : 90.11% ± 0.25% 
+Train 10% / Val 90% : 90.55% ± 0.24% 
+Train 20% / Val 80% : 91.58% ± 0.19% 
+Train 30% / Val 70% : 92.22% ± 0.07% 
+Train 40% / Val 60% : 92.61% ± 0.13% 
+Train 50% / Val 50% : 92.79% ± 0.12% 
+Train 60% / Val 40% : 92.93% ± 0.11% 
+Train 70% / Val 30% : 93.17% ± 0.18% 
+------------------------------

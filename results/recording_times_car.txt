@@ -1,0 +1,27 @@
+=== XGBOOST PERFORMANCE RESULTS for 1 seconds of recording at Sample Rate: 50.0 MHz for car ===
+Validation Macro Precision: 88.48%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 2 seconds of recording at Sample Rate: 50.0 MHz for car ===
+Validation Macro Precision: 88.22%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 3 seconds of recording at Sample Rate: 50.0 MHz for car ===
+Validation Macro Precision: 88.50%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 5 seconds of recording at Sample Rate: 50.0 MHz for car ===
+Validation Macro Precision: 88.46%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 7 seconds of recording at Sample Rate: 50.0 MHz for car ===
+Validation Macro Precision: 88.51%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 10 seconds of recording at Sample Rate: 50.0 MHz for car ===
+Validation Macro Precision: 88.43%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 15 seconds of recording at Sample Rate: 50.0 MHz for car ===
+Validation Macro Precision: 88.52%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 20 seconds of recording at Sample Rate: 50.0 MHz for car ===
+Validation Macro Precision: 88.53%
+------------------------------
+=== XGBOOST PERFORMANCE RESULTS for 30 seconds of recording at Sample Rate: 50.0 MHz for car ===
+Validation Macro Precision: 88.54%
+------------------------------

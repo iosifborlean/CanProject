@@ -383,15 +383,18 @@ def evaluate_recording_times():
         if car_type == 'prototype':
             config, target_ids = "all", combinazioni_board["all"]
             results_filepath = results_directory / "recording_times_prototype.txt"
+            report_file = results_directory / "reports_prototype"
             open(results_filepath, "w").close()
             break
         elif car_type == 'car':
             config, target_ids = "car", id_dictionary_car.keys()
             results_filepath = results_directory / "recording_times_car.txt"
+            report_file = results_directory / "reports_car"
             open(results_filepath, "w").close()
             break
         else:
             print("Options are 'prototype' and 'car'")
+
 
     model_type, hyperparams, features = best_model()
     downsampling = 1
@@ -400,6 +403,8 @@ def evaluate_recording_times():
 
     recording_times = [1, 2, 3, 5, 7, 10, 15, 20, 30]
 
+    with open(report_file, "w", encoding="utf-8") as f:
+        pass
 
     for recording_time in recording_times:
         x_train, x_test, y_train, y_test = load_or_extract_features(real_sample_rate, recording_time, config, target_ids,
@@ -408,8 +413,16 @@ def evaluate_recording_times():
         opt_model = MLmodel(sample_rate=real_sample_rate, ml_model=model_type, selected_features=features,
                             hyperparams=hyperparams)
 
-        opt_model.evaluate_performance(x_train, x_test, y_train, y_test, recording_time, board=car_type, filepath=results_filepath, write_to_file=True)
-
+        report = opt_model.evaluate_performance(x_train, x_test, y_train, y_test, recording_time, board=car_type, filepath=results_filepath, write_to_file=True)
+        with open(report_file, "a", encoding="utf-8") as f:
+            if car_type == "car":
+                f.write(
+                    f"=== {model_type} PERFORMANCE RESULTS for {recording_time} seconds of recording at Sample Rate: {real_sample_rate} MHz for car ===\n")
+            else:
+                f.write(
+                    f"=== {model_type} PERFORMANCE RESULTS for {recording_time} seconds of recording at Sample Rate: {real_sample_rate} MHz for {model_type} boards ===\n")
+            f.write(report)
+            f.write(f"-" * 30 + f"\n")
 
 def evaluate_single_board_type():
     model_type, hyperparams, features = best_model()
@@ -504,7 +517,7 @@ def evaluate_downsampling_and_features_performance():
         opt_model = MLmodel(sample_rate=real_sample_rate, ml_model=model_type,
                             hyperparams=hyperparams)
 
-        score, features, top_results = opt_model.test_feature_subsets(x_train=x_train, y_train=y_train, max_combinations=max_combinations, results_filepath=results_filepath, inclusion_threshold=70.0)
+        score, features, top_results = opt_model.test_feature_subsets(x_train=x_train, y_train=y_train, max_combinations=max_combinations, results_filepath=results_filepath)
 
         for res in top_results:
             for feat in res['features']:
