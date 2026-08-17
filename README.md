@@ -24,31 +24,31 @@
 ### 1.1 Hyperparameter Fine-Tuning & Model Selection
 
 * **Entry Function:** `model_optimization_and_choice()`
-* **Outputs:** `best_hyperparams.txt`, `best_model.csv`
+* **Outputs:** `results/best_hyperparams.txt`, `results/best_model`
 
 Systematically tunes and compares candidate classification models (`xgboost`, `random_forest`, and `svm`) to identify the top-performing architecture. 
 
 For each algorithm, the routine invokes `optimize_hyperparams()` to execute a 5-fold cross-validated grid search (`GridSearchCV`) over predefined hyperparameter grids—incorporating pipeline-level preprocessing such as `StandardScaler` for SVMs and balanced sample weighting for XGBoost. 
-After evaluating each tuned model on 35-second prototype recordings at 50 Hz, the function selects the best overall model architecture, appends optimization logs to `best_hyperparams.txt`, and exports the winning configuration to `best_model.csv`.
+After evaluating each tuned model on 35-second prototype recordings at 50 Hz, the function selects the best overall model architecture, appends optimization logs to `results/best_hyperparams.txt`, and exports the winning configuration to `results/best_model`.
 
 ---
 
 ### 1.2 Feature Analysis
 
 * **Entry Function:** `evaluate_features()`
-* **Outputs:** `features_results.txt`, `best_model.csv` (updated)
+* **Outputs:** `results/features_results.txt`, `results/best_model` (updated)
 
 Runs an automated feature selection routine to identify the most resilient feature combination for the optimal model setup. 
 
 The underlying procedure (`test_feature_subsets`) samples randomized feature subsets across predefined size tiers (5 to 25 features) and evaluates each using 3-fold Stratified K-Fold cross-validation (macro precision). 
-By analyzing feature frequency across the top 20% highest-scoring combinations, it derives a distilled "robust feature set" based on a consensus inclusion threshold ($\ge 65\%$). The routine logs a detailed statistical report to `features_results.txt` and automatically updates `best_model.csv` with the newly optimized feature configuration.
+By analyzing feature frequency across the top 20% highest-scoring combinations, it derives a distilled "robust feature set" based on a consensus inclusion threshold ($\ge 65\%$). The routine logs a detailed statistical report to `results/features_results.txt` and automatically updates `results/best_model` with the newly optimized feature configuration.
 
 ---
 
 ### 1.3 Folds & Training Splits Analysis
 
 * **Entry Function:** `evaluate_folds_and_splits()`
-* **Outputs:** `results_folds_and_training_splits_filepath` log file
+* **Outputs:** `results/folds_and_training_splits.txt` log file
 
 Benchmarks model stability and training data volume sensitivity using the optimal model configuration on 35-second prototype recordings at 50 Hz. 
 
@@ -60,46 +60,46 @@ Both evaluations compute macro precision metrics (mean $\pm$ standard deviation)
 ### 1.4 Recording Times Evaluation
 
 * **Entry Function:** `evaluate_recording_times()`
-* **Outputs:** `recording_times_<car_type>.txt`
+* **Outputs:** `results/recording_times_<car_type>.txt`
 
 Runs an automated experiment evaluating model performance as a function of recording window size (1–30 seconds). 
 
-Upon selection of the target vehicle type (`prototype` vs. `car`), the routine retrieves the top-performing model configuration, processes dataset features at 50 Hz across nine distinct durations, and writes the performance evaluation logs to `recording_times_<car_type>.txt`.
+Upon selection of the target vehicle type (`prototype` vs. `car`), the routine retrieves the top-performing model configuration, processes dataset features at 50 Hz across nine distinct durations, and writes the performance evaluation logs to `results/recording_times_<car_type>.txt`.
 
 ---
 
 ### 1.5 Single Board Performance
 
 * **Entry Function:** `evaluate_single_board_type()`
-* **Outputs:** `single_board_results.txt`
+* **Outputs:** `results/single_board_results.txt`
 
 Evaluates classification performance when trained and tested on data isolated by specific sensor board types (`Aurix`, `ST`, `Atmel`) rather than aggregated datasets. 
 
-Operating on 35-second prototype recordings at 50 Hz, the function iterates through each board configuration in `combinazioni_board`. It then evaluates model test metrics independently for each hardware context and appends performance summaries to `single_board_results.txt`.
+Operating on 35-second prototype recordings at 50 Hz, the function iterates through each board configuration in `combinazioni_board`. It then evaluates model test metrics independently for each hardware context and appends performance summaries to `results/single_board_results.txt`.
 
 ---
 
 ### 1.6 Downsampling Performance
 
 * **Entry Function:** `evaluate_downsampling_performance()`
-* **Outputs:** `downsampling_results.txt`
+* **Outputs:** `results/downsampling_results.txt`
 
 Benchmarks how classification accuracy degrades as the sensor sampling rate is reduced. 
 
 Using 35-second prototype recordings and the optimal model configuration, the routine iterates through downsampling factors from 1 to 8—reducing the effective sampling rate from 50 Hz down to 6.25 Hz. 
-For each rate, it extracts features, evaluates model test metrics, and appends the comparative performance log to `downsampling_results.txt`.
+For each rate, it extracts features, evaluates model test metrics, and appends the comparative performance log to `results/downsampling_results.txt`.
 
 ---
 
 ### 1.7 Downsampling + Feature Analysis
 
 * **Entry Function:** `evaluate_downsampling_and_features_performance()`
-* **Outputs:** `downsampling_and_features_results.txt`
+* **Outputs:** `results/downsampling_and_features_results.txt`
 
 Identifies features that maintain high predictive utility across varying sampling frequencies. 
 
 Working on 35-second prototype recordings, the function iterates through downsampling factors (1, 2, 3, 4, and 8; reducing rates from 50 Hz to 6.25 Hz) and runs randomized feature subset testing (`test_feature_subsets`) at each resolution. 
-By tracking feature frequency across the top 20% performing models across all sampling tiers, it computes global cross-sampling inclusion rates to reveal potentially frequency-invariant features, saving the consolidated report to `downsampling_and_features_results.txt`.
+By tracking feature frequency across the top 20% performing models across all sampling tiers, it computes global cross-sampling inclusion rates to reveal potentially frequency-invariant features, saving the consolidated report to `results/downsampling_and_features_results.txt`.
 
 ---
 
