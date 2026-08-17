@@ -7,8 +7,8 @@ import pandas as pd
 def parse_logic_files(sample_rate, pre_padding_time, post_padding_time):
     SAMPLE_RATE = sample_rate * 1e6
 
-    PRE_PADDING_TIME = pre_padding_time * 1e-6  # Increased to reach further back into the idle state
-    POST_PADDING_TIME = post_padding_time * 1e-6  # Kept standard for the end of the frame
+    PRE_PADDING_TIME = pre_padding_time * 1e-6
+    POST_PADDING_TIME = post_padding_time * 1e-6
 
     PRE_PADDING_SAMPLES = int(PRE_PADDING_TIME * SAMPLE_RATE)
     POST_PADDING_SAMPLES = int(POST_PADDING_TIME * SAMPLE_RATE)
@@ -47,8 +47,8 @@ def parse_logic_files(sample_rate, pre_padding_time, post_padding_time):
             start_time = float(row[2].strip('"'))
 
             if field_type == "identifier_field":
-                identifier_full = row[4].strip('"') # Maserati
-                # identifier_full = row[5].strip('"')  # Volvo v40
+                identifier_full = row[4].strip('"')
+
                 if identifier_full:
                     current_id = identifier_full[-3:]
                 else:
@@ -56,7 +56,7 @@ def parse_logic_files(sample_rate, pre_padding_time, post_padding_time):
 
 
             elif field_type == "control_field" or field_type == "data_field":
-                # Only start recording the valid window AFTER arbitration is over!
+
                 if current_id is not None and current_id_start_time is None:
                     current_id_start_time = start_time
 
